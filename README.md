@@ -5,6 +5,8 @@ A quick template with everything you need to get started with frontend Ethereum 
 I love using [wagmi](https://github.com/tmm/wagmi) for Ethereum projects, but I got tired of creating repos from scratch over and over.
 So I decided to create a starter repo that sets a create-react-app project with some mundane tasks already done such as creating a login modal, setting up a provider and some styles.
 
+[live demo](https://wagmi-starter.vercel.app/)
+
 ## About wagmi
 
 [wagmi](https://github.com/tmm/wagmi) is a React Hooks library for Ethereum, built on ethers.js.
