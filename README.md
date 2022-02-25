@@ -1,31 +1,42 @@
-# Create React App
+# wagmi starter
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+A quick template with everything you need to get started with frontend Ethereum projects.
 
-## Deploy Your Own
+I love using [wagmi](https://github.com/tmm/wagmi) for Ethereum projects, but I got tired of creating repos from scratch over and over.
+So I decided to create a starter repo that sets a create-react-app project with some mundane tasks already done such as creating a login modal, setting up a provider and some styles.
 
-Deploy your own Create React App project with Vercel.
+## About wagmi
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+[wagmi](https://github.com/tmm/wagmi) is a React Hooks library for Ethereum, built on ethers.js.
+It provides lots of fun hooks that make interacting with the blockchain a breeze.
 
-_Live Example: https://create-react-template.vercel.app/_
+You can read their full documentation [here](https://wagmi-xyz.vercel.app/)
 
-## Available Scripts
+## Getting started
 
-In the project directory, you can run:
+1. You can clone or fork this repo.
+2. Install the dependencies.
+```
+cd wagmi-starter
+yarn
+```
+3. Add a `.env` file with the following values.
+```.env
+REACT_APP_ALCHEMY_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+REACT_APP_INFURA_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+REACT_APP_CHAIN_ID=1
+REACT_APP_NETWORK=homestead
+```
+4. Style your dapp however you want, feel free to delete anything you don't need.
 
-### `npm start`
+## A quick note on the state of wallectconnect & coinbase wallet and create react app.
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Due to these packages relying on nodejs modules which are not supported anymore using webpack 5 (which comes with react-scripts 5)
+we have to do some hacky shit to be able to use them right now. 
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+This starte takes care of all that for you but hopefully this is fixed soon and I can update this repo.
 
-### `npm test`
+You can read more about the problem and the fix [here](https://github.com/NoahZinsmeister/web3-react/issues/423)
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I also want to thank [willisk](https://github.com/willisk) for saving me hours of troubleshooting with this solution.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
