@@ -42,3 +42,9 @@ You can read more about the problem and the fix [here](https://github.com/NoahZi
 
 I also want to thank [willisk](https://github.com/willisk) for saving me hours of troubleshooting with this solution.
 
+# Thanks
+- A massive thank you to [@awkweb](https://twitter.com/awkweb) for creating wagmi. I've loved using it thus far.
+
+# License
+- MIT
+
